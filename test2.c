@@ -18,6 +18,9 @@
 #define QUEUE_POLL_CONSUMER ((struct timespec){1, 0})
 
 int main() {
+
+
+
 	mqd_t mq;
 	struct timespec poll_sleep;
 	struct mq_attr attr;
@@ -58,5 +61,5 @@ int main() {
 
 	printf("[CONSUMER]: Cleanup...\n");
 	mq_close(mq);
-	mq_unlink(QUEUE_NAME);
+	// mq_unlink(QUEUE_NAME);
 }

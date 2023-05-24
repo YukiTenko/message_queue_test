@@ -23,8 +23,6 @@
 int main() {
 	mqd_t mq;
 	struct timespec poll_sleep;
-
-	struct mq_attr attr;
    
 	/* Create the message queue. The queue reader is NONBLOCK. */
    do {
